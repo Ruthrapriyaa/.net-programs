@@ -1,0 +1,11 @@
+using System;
+class Program29
+{
+    static void Main()
+    {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine().ToLower();
+        bool isPangram = "abcdefghijklmnopqrstuvwxyz".All(c => input.Contains(c));
+        Console.WriteLine(isPangram ? "The string is a Pangram." : "The string is not a Pangram.");
+    }
+}
